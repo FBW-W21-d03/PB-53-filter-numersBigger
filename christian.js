@@ -1,7 +1,12 @@
+// Teil 1
 const zahlen = [80, 120, 90, 130, 145, 99, 85, 125, 132];
 
-let zahlenÜberHundert = zahlen.filter((zahl) => zahl > 100);
-console.log("Alle Zahlen über 100:", zahlenÜberHundert);
+// Teil 2
+const zahlenÜber100 = zahlen.filter((zahl) => zahl > 100);
 
-let zahlenBereich = zahlen.filter((zahl) => zahl >= 100 && zahl <= 140);
+// Teil 3
+console.log("Alle Zahlen über 100:", zahlenÜber100);
+
+// Zusatz
+const zahlenBereich = zahlen.filter((zahl) => zahl > 100 && zahl < 140);
 console.log("Alle Zahlen zwischen 100 und 140:", zahlenBereich);
